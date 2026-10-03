@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#123f2b">
   <title>ZEDE | Espacios para celebrar</title>
   <link rel="icon" href="assets/favicon.png">
-  <link rel="stylesheet" href="styles.css?v=20260926-faq">
+  <link rel="stylesheet" href="styles.css?v=20261002-spaces">
 </head>
 <body>
   <header class="hero">
@@ -41,6 +41,29 @@
       <article class="card"><span>▣</span><h3>Elige tu fecha</h3><p>Consulta la disponibilidad del salón y selecciona el horario de tu evento.</p></article>
       <article class="card"><span>✓</span><h3>Reserva</h3><p>Aparta tu fecha y mantén la comunicación con el anfitrión dentro de ZEDE.</p></article>
     </div>
+  </section>
+
+  <section class="registered-section" id="espacios-registrados" aria-labelledby="registered-title">
+    <div class="registered-heading">
+      <div>
+        <p class="eyebrow green">YA SON PARTE DE ZEDE</p>
+        <h2 id="registered-title">Estas palapas y salones ya están registrados</h2>
+      </div>
+      <p>Conoce algunos de los espacios que se están preparando para recibir solicitudes en ZEDE.</p>
+    </div>
+    <div class="registered-toolbar">
+      <p class="registered-count" id="registered-count" aria-live="polite">Cargando espacios registrados…</p>
+      <div class="carousel-actions" aria-label="Controles de la galería">
+        <button class="carousel-button" id="spaces-prev" type="button" aria-label="Ver espacios anteriores">←</button>
+        <button class="carousel-button" id="spaces-next" type="button" aria-label="Ver más espacios">→</button>
+      </div>
+    </div>
+    <div class="spaces-carousel" id="spaces-carousel" role="region" aria-label="Galería de palapas y salones registrados" tabindex="0">
+      <article class="space-card space-card-loading" aria-hidden="true"><div class="space-card-image"></div><div class="space-card-body"><span></span><span></span><span></span></div></article>
+      <article class="space-card space-card-loading" aria-hidden="true"><div class="space-card-image"></div><div class="space-card-body"><span></span><span></span><span></span></div></article>
+      <article class="space-card space-card-loading" aria-hidden="true"><div class="space-card-image"></div><div class="space-card-body"><span></span><span></span><span></span></div></article>
+    </div>
+    <p class="registered-note">Las publicaciones se muestran con información general. La ubicación exacta se protege hasta que exista una reservación confirmada.</p>
   </section>
 
   <section class="download" id="descarga">
@@ -183,6 +206,7 @@
     </div>
     <p class="copyright">© 2026 ZEDE. Todos los derechos reservados.</p>
   </footer>
+  <script src="spaces.js?v=20261002-spaces" defer></script>
   <script src="faq.js?v=20260926-faq" defer></script>
 </body>
 </html>
