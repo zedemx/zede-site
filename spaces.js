@@ -31,7 +31,7 @@
     const signed = data.signedURL || data.signedUrl || '';
     return signed.startsWith('http') ? signed : `${SUPABASE_URL}/storage/v1${signed}`;
   };
-  const card = (space, photo) => `<article class="space-card">
+  const card = (space, photo) => `<a class="space-card" href="/lugar?id=${encodeURIComponent(space.id)}" aria-label="Ver ${escapeHtml(space.name)} en ZEDE">
     <div class="space-card-image"${photo ? ` style="background-image:url('${escapeHtml(photo)}')"` : ''}>
       <span class="space-badge">REGISTRADO EN ZEDE</span><span class="space-type">${escapeHtml(space.space_type)}</span>
     </div>
@@ -39,9 +39,9 @@
       <h3>${escapeHtml(space.name)}</h3>
       <p class="space-location">${escapeHtml(area(space))}, ${escapeHtml(space.state)}</p>
       <div class="space-facts"><span class="space-fact">Hasta ${escapeHtml(space.capacity)} personas</span>${space.event_hours ? `<span class="space-fact">${escapeHtml(space.event_hours)} h por evento</span>` : ''}</div>
-      <p class="space-price">${escapeHtml(price(space))}</p>
+      <p class="space-price">${escapeHtml(price(space))}</p><span class="space-open">Ver publicación →</span>
     </div>
-  </article>`;
+  </a>`;
 
   async function loadSpaces() {
     try {

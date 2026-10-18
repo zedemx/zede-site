@@ -14,9 +14,9 @@
     <nav class="nav" aria-label="Navegación principal">
       <img class="logo" src="assets/zede-logo.png" alt="ZEDE">
       <div class="nav-actions">
+        <a class="nav-link" href="/buscar">Explorar espacios</a>
         <a class="nav-link nav-faq" href="#preguntas-frecuentes">Preguntas frecuentes</a>
-        <a class="nav-link nav-download" href="#descarga">Descarga la app</a>
-        <a class="nav-link" href="#contacto">Contacto</a>
+        <a class="nav-link nav-download" href="/login">Iniciar sesión</a>
       </div>
     </nav>
     <div class="hero-shade"></div>
@@ -27,7 +27,10 @@
       </div>
       <h1>Encuentra el espacio ideal para celebrar.</h1>
       <p class="lead">Descubre salones, jardines, terrazas y palapas. Compara opciones, consulta disponibilidad y reserva desde ZEDE.</p>
-      <a class="button" href="#conoce">Conoce ZEDE</a>
+      <div class="hero-actions">
+        <a class="button" href="/buscar">Explorar espacios</a>
+        <a class="button button-ghost" href="/registro?tipo=anfitrion&amp;next=%2Fespacio">Registrar mi espacio</a>
+      </div>
     </main>
   </header>
 
@@ -49,7 +52,7 @@
         <p class="eyebrow green">YA SON PARTE DE ZEDE</p>
         <h2 id="registered-title">Estas palapas y salones ya están registrados</h2>
       </div>
-      <p>Conoce algunos de los espacios que se están preparando para recibir solicitudes en ZEDE.</p>
+      <p>Conoce los espacios disponibles y abre cada publicación para revisar fotografías, capacidad, servicios y precios.</p>
     </div>
     <div class="registered-toolbar">
       <p class="registered-count" id="registered-count" aria-live="polite">Cargando espacios registrados…</p>
@@ -92,9 +95,13 @@
     </div>
 
     <div class="download-copy">
-      <p class="eyebrow green">ZEDE EN TU CELULAR</p>
-      <h2>Descarga tu app</h2>
-      <p>Descubre espacios, consulta fechas disponibles y administra tu reservación desde un solo lugar.</p>
+      <p class="eyebrow green">ZEDE DESDE CUALQUIER DISPOSITIVO</p>
+      <h2>Busca y reserva directamente en zede.com.mx</h2>
+      <p>Explora espacios, consulta fechas, envía solicitudes y administra tus reservaciones desde el navegador de tu celular o computadora.</p>
+      <div class="web-actions">
+        <a class="button" href="/buscar">Buscar un espacio</a>
+        <a class="text-link" href="/login">Ya tengo cuenta →</a>
+      </div>
       <div class="store-buttons" aria-label="Disponibilidad de la aplicación">
         <div class="store-button" role="img" aria-label="Próximamente en Google Play">
           <svg class="play-logo" viewBox="0 0 32 36" aria-hidden="true"><path fill="#34a853" d="M1 2.7 18.7 18 1 33.3c-.6-.8-1-1.8-1-3V5.7c0-1.1.4-2.2 1-3Z"/><path fill="#fbbc04" d="m24.4 13.1-4.5 3.9L2.8 2.2C4 1.6 5.3 1.8 6.4 2.4l18 10.7Z"/><path fill="#4285f4" d="M2.8 33.8 19.9 19l4.5 3.9-18 10.7c-1.1.7-2.4.8-3.6.2Z"/><path fill="#ea4335" d="m30.1 16.5-5.7-3.4-4.5 3.9 4.5 3.9 5.7-3.4c.5-.3.5-.7 0-1Z"/></svg>
@@ -105,7 +112,7 @@
           <span><small>PRÓXIMAMENTE EN EL</small><strong>App Store</strong></span>
         </div>
       </div>
-      <p class="availability"><span></span> Muy pronto disponible para Android y iOS</p>
+      <p class="availability"><span></span> Disponible ahora en la web · Aplicaciones móviles próximamente</p>
     </div>
   </section>
 
@@ -114,6 +121,7 @@
       <p class="eyebrow">PARA ANFITRIONES</p>
       <h2>Haz que más personas descubran tu espacio</h2>
       <p>Publica tu salón, administra fechas y recibe solicitudes de reservación desde una sola plataforma.</p>
+      <a class="button button-light" href="/registro?tipo=anfitrion&amp;next=%2Fespacio">Registrar mi espacio</a>
     </div>
     <div class="host-mark" aria-hidden="true">Z</div>
   </section>
@@ -154,7 +162,7 @@
         <details class="faq-item"><summary><span>¿Dónde puedo consultar mis reservaciones?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Inicia sesión y abre <strong>Reservaciones</strong>. Ahí puedes revisar solicitudes, próximas reservaciones, historial, pagos y cambios de estado.</p></div></details>
         <details class="faq-item"><summary><span>¿Cómo puedo contactar a soporte?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Escribe a <a href="mailto:contacto@zede.com.mx">contacto@zede.com.mx</a> e incluye el correo de tu cuenta y una descripción del problema. Nunca envíes contraseñas, CVV ni códigos de acceso.</p></div></details>
         <details class="faq-item"><summary><span>¿Cómo protege ZEDE mis datos personales?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>ZEDE aplica controles por cuenta, archivos privados y validaciones del lado del servidor. No almacena números completos de tarjeta, CVV ni contraseñas de Mercado Pago. Consulta el <a href="privacidad.html">Aviso de Privacidad</a>.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo puedo eliminar mi cuenta y mis datos?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Desde la app abre <strong>Perfil → Privacidad y datos → Eliminar mi cuenta</strong>. También puedes seguir las instrucciones de <a href="eliminar-cuenta.html">eliminación de cuenta</a>. Los datos sujetos a obligaciones legales podrán conservarse bloqueados durante el plazo aplicable.</p></div></details>
+        <details class="faq-item"><summary><span>¿Cómo puedo eliminar mi cuenta y mis datos?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>En ZEDE abre <strong>Perfil → Privacidad y datos → Eliminar mi cuenta</strong>. También puedes seguir las instrucciones de <a href="eliminar-cuenta.html">eliminación de cuenta</a>. Los datos sujetos a obligaciones legales podrán conservarse bloqueados durante el plazo aplicable.</p></div></details>
       </div>
     </div>
 
@@ -188,7 +196,7 @@
       <div><p class="eyebrow">¿TODAVÍA TIENES DUDAS?</p><h3>Estamos para ayudarte.</h3></div>
       <div class="faq-cta-actions">
         <a class="button button-light" href="mailto:contacto@zede.com.mx?subject=Ayuda%20con%20ZEDE">Contactar a ZEDE</a>
-        <a class="button button-outline" href="https://app.zede.com.mx/registro?tipo=anfitrion" aria-label="Registrar mi espacio en ZEDE">Quiero registrar mi espacio</a>
+        <a class="button button-outline" href="/registro?tipo=anfitrion&amp;next=%2Fespacio" aria-label="Registrar mi espacio en ZEDE">Quiero registrar mi espacio</a>
       </div>
     </div>
   </section>
