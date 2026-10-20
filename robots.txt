@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin-revisiones
+Disallow: /anfitrion
+Disallow: /calendario
+Disallow: /chat
+Disallow: /confirmar-correo
+Disallow: /consultas
+Disallow: /eliminar-cuenta
+Disallow: /espacio
+Disallow: /informacion-fiscal
+Disallow: /notificaciones
+Disallow: /perfil
+Disallow: /privacidad-datos
+Disallow: /reservaciones
+Disallow: /reservar
+Disallow: /restablecer-contrasena
+Disallow: /seguridad-admin
+
+Sitemap: https://zede.com.mx/sitemap.xml
