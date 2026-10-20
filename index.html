@@ -1,220 +1,631 @@
-<!doctype html>
-<html lang="es-MX">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="ZEDE conecta personas con salones, jardines, terrazas y palapas para celebrar eventos.">
-  <meta name="theme-color" content="#123f2b">
-  <title>ZEDE | Espacios para celebrar</title>
-  <link rel="icon" href="assets/favicon.png?v=zede-20261020">
-  <link rel="stylesheet" href="styles.css?v=20261002-spaces">
-</head>
-<body>
-  <header class="hero">
-    <nav class="nav" aria-label="Navegación principal">
-      <img class="logo" src="assets/zede-logo.png" alt="ZEDE">
-      <div class="nav-actions">
-        <a class="nav-link" href="/buscar">Explorar espacios</a>
-        <a class="nav-link nav-faq" href="#preguntas-frecuentes">Preguntas frecuentes</a>
-        <a class="nav-link nav-download" href="/login">Iniciar sesión</a>
-      </div>
-    </nav>
-    <div class="hero-shade"></div>
-    <main class="hero-content">
-      <p class="eyebrow">TU EVENTO EMPIEZA AQUÍ</p>
-      <div class="launch-announcement" aria-label="Próximo lanzamiento">
-        <span>PRÓXIMO LANZAMIENTO</span>
-      </div>
-      <h1>Encuentra el espacio ideal para celebrar.</h1>
-      <p class="lead">Descubre salones, jardines, terrazas y palapas. Compara opciones, consulta disponibilidad y reserva desde ZEDE.</p>
-      <div class="hero-actions">
-        <a class="button" href="/buscar">Explorar espacios</a>
-        <a class="button button-ghost" href="/registro?tipo=anfitrion&amp;next=%2Fespacio">Registrar mi espacio</a>
-      </div>
-    </main>
-  </header>
-
-  <section class="section" id="conoce">
-    <div class="section-heading">
-      <p class="eyebrow green">TODO EN UN MISMO LUGAR</p>
-      <h2>Una forma clara y segura de organizar tu evento</h2>
-    </div>
-    <div class="cards">
-      <article class="card"><span>⌕</span><h3>Explora</h3><p>Encuentra espacios por capacidad, ubicación, precio y comodidades.</p></article>
-      <article class="card"><span>▣</span><h3>Elige tu fecha</h3><p>Consulta la disponibilidad del salón y selecciona el horario de tu evento.</p></article>
-      <article class="card"><span>✓</span><h3>Reserva</h3><p>Aparta tu fecha y mantén la comunicación con el anfitrión dentro de ZEDE.</p></article>
-    </div>
-  </section>
-
-  <section class="registered-section" id="espacios-registrados" aria-labelledby="registered-title">
-    <div class="registered-heading">
-      <div>
-        <p class="eyebrow green">YA SON PARTE DE ZEDE</p>
-        <h2 id="registered-title">Estas palapas y salones ya están registrados</h2>
-      </div>
-      <p>Conoce los espacios disponibles y abre cada publicación para revisar fotografías, capacidad, servicios y precios.</p>
-    </div>
-    <div class="registered-toolbar">
-      <p class="registered-count" id="registered-count" aria-live="polite">Cargando espacios registrados…</p>
-      <div class="carousel-actions" aria-label="Controles de la galería">
-        <button class="carousel-button" id="spaces-prev" type="button" aria-label="Ver espacios anteriores">←</button>
-        <button class="carousel-button" id="spaces-next" type="button" aria-label="Ver más espacios">→</button>
-      </div>
-    </div>
-    <div class="spaces-carousel" id="spaces-carousel" role="region" aria-label="Galería de palapas y salones registrados" tabindex="0">
-      <article class="space-card space-card-loading" aria-hidden="true"><div class="space-card-image"></div><div class="space-card-body"><span></span><span></span><span></span></div></article>
-      <article class="space-card space-card-loading" aria-hidden="true"><div class="space-card-image"></div><div class="space-card-body"><span></span><span></span><span></span></div></article>
-      <article class="space-card space-card-loading" aria-hidden="true"><div class="space-card-image"></div><div class="space-card-body"><span></span><span></span><span></span></div></article>
-    </div>
-    <p class="registered-note">Las publicaciones se muestran con información general. La ubicación exacta se protege hasta que exista una reservación confirmada.</p>
-  </section>
-
-  <section class="download" id="descarga">
-    <div class="phone-stage" aria-label="Vista previa de la aplicación ZEDE">
-      <div class="phone-glow"></div>
-      <div class="phone">
-        <div class="phone-speaker"></div>
-        <div class="phone-screen">
-          <div class="app-status"><span>9:41</span><span>● ◒ ▰</span></div>
-          <div class="app-header">
-            <img src="assets/zede-logo.png" alt="ZEDE">
-            <span class="profile-dot">Z</span>
-          </div>
-          <p class="app-kicker">Encuentra tu espacio</p>
-          <h3>¿Dónde quieres celebrar?</h3>
-          <div class="app-search"><span>⌕</span><span>Busca salones, jardines…</span></div>
-          <div class="app-photo">
-            <span class="app-favorite">♡</span>
-            <div class="app-photo-copy"><strong>Oasis Verde</strong><small>Jardín para eventos</small></div>
-          </div>
-          <div class="app-meta"><span>★ 4.9</span><span>Hasta 150 invitados</span></div>
-          <div class="app-price"><strong>Desde $5,500</strong><span>MXN por evento</span></div>
-          <div class="app-tabs"><span>⌂<small>Inicio</small></span><span>♡<small>Favoritos</small></span><span>☻<small>Perfil</small></span></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="download-copy">
-      <p class="eyebrow green">ZEDE DESDE CUALQUIER DISPOSITIVO</p>
-      <h2>Busca y reserva directamente en zede.com.mx</h2>
-      <p>Explora espacios, consulta fechas, envía solicitudes y administra tus reservaciones desde el navegador de tu celular o computadora.</p>
-      <div class="web-actions">
-        <a class="button" href="/buscar">Buscar un espacio</a>
-        <a class="text-link" href="/login">Ya tengo cuenta →</a>
-      </div>
-      <div class="store-buttons" aria-label="Disponibilidad de la aplicación">
-        <div class="store-button" role="img" aria-label="Próximamente en Google Play">
-          <svg class="play-logo" viewBox="0 0 32 36" aria-hidden="true"><path fill="#34a853" d="M1 2.7 18.7 18 1 33.3c-.6-.8-1-1.8-1-3V5.7c0-1.1.4-2.2 1-3Z"/><path fill="#fbbc04" d="m24.4 13.1-4.5 3.9L2.8 2.2C4 1.6 5.3 1.8 6.4 2.4l18 10.7Z"/><path fill="#4285f4" d="M2.8 33.8 19.9 19l4.5 3.9-18 10.7c-1.1.7-2.4.8-3.6.2Z"/><path fill="#ea4335" d="m30.1 16.5-5.7-3.4-4.5 3.9 4.5 3.9 5.7-3.4c.5-.3.5-.7 0-1Z"/></svg>
-          <span><small>PRÓXIMAMENTE EN</small><strong>Google Play</strong></span>
-        </div>
-        <div class="store-button" role="img" aria-label="Próximamente en App Store">
-          <svg class="apple-logo" viewBox="0 0 32 38" aria-hidden="true"><path fill="currentColor" d="M26.8 20.1c0-4.7 3.9-7 4.1-7.1-2.2-3.2-5.6-3.6-6.8-3.7-2.9-.3-5.6 1.7-7.1 1.7-1.5 0-3.8-1.7-6.3-1.6-3.2 0-6.2 1.9-7.9 4.8-3.4 5.9-.9 14.5 2.4 19.2 1.6 2.3 3.5 4.9 6 4.8 2.4-.1 3.3-1.5 6.2-1.5s3.7 1.5 6.2 1.5c2.6 0 4.2-2.3 5.8-4.6 1.8-2.7 2.6-5.3 2.6-5.4-.1 0-5.2-2-5.2-8.1ZM22.2 6.3C23.5 4.7 24.4 2.5 24.1.4c-1.9.1-4.2 1.3-5.6 2.9-1.2 1.4-2.3 3.6-2 5.6 2.1.2 4.3-1 5.7-2.6Z"/></svg>
-          <span><small>PRÓXIMAMENTE EN EL</small><strong>App Store</strong></span>
-        </div>
-      </div>
-      <p class="availability"><span></span> Disponible ahora en la web · Aplicaciones móviles próximamente</p>
-    </div>
-  </section>
-
-  <section class="host">
-    <div>
-      <p class="eyebrow">PARA ANFITRIONES</p>
-      <h2>Haz que más personas descubran tu espacio</h2>
-      <p>Publica tu salón, administra fechas y recibe solicitudes de reservación desde una sola plataforma.</p>
-      <a class="button button-light" href="/registro?tipo=anfitrion&amp;next=%2Fespacio">Registrar mi espacio</a>
-    </div>
-    <div class="host-mark" aria-hidden="true">Z</div>
-  </section>
-
-  <section class="faq-section" id="preguntas-frecuentes" aria-labelledby="faq-title">
-    <div class="faq-intro">
-      <div>
-        <p class="eyebrow green">PREGUNTAS FRECUENTES</p>
-        <h2 id="faq-title">Todo lo que necesitas saber sobre ZEDE</h2>
-      </div>
-      <p>Respuestas claras para reservar un salón para eventos o publicar tu espacio en ZEDE.</p>
-    </div>
-
-    <div class="faq-tabs" role="tablist" aria-label="Selecciona el tipo de preguntas">
-      <button class="faq-tab is-active" id="tab-clientes" type="button" role="tab" aria-selected="true" aria-controls="faq-clientes" data-faq-tab="clientes">Clientes</button>
-      <button class="faq-tab" id="tab-anfitriones" type="button" role="tab" aria-selected="false" aria-controls="faq-anfitriones" data-faq-tab="anfitriones">Anfitriones</button>
-    </div>
-
-    <div class="faq-panel" id="faq-clientes" role="tabpanel" aria-labelledby="tab-clientes" data-faq-panel="clientes">
-      <h3 class="faq-category-title">Para quienes buscan un espacio</h3>
-      <div class="faq-list">
-        <details class="faq-item"><summary><span>¿Qué es ZEDE?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>ZEDE es una plataforma para descubrir salones, palapas, jardines y terrazas, consultar su información y solicitar una reservación para un evento.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo encuentro un espacio para mi evento?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Cuando ZEDE se encuentre disponible, podrás buscar por nombre, ciudad o tipo de espacio y utilizar los filtros de la plataforma. En cada publicación podrás revisar capacidad, servicios, precios, fotografías, ubicación y fechas.</p></div></details>
-        <details class="faq-item"><summary><span>¿Qué tipos de espacios puedo encontrar?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Inicialmente encontrarás salones, palapas, jardines y terrazas para distintos tipos y tamaños de evento. Cada publicación indica su capacidad y características.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo funciona una reservación?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Eliges el espacio, fecha, horario, número de invitados y extras; después envías una solicitud. El anfitrión puede aceptarla o rechazarla. Si la acepta, ZEDE te muestra el pago aplicable y la reservación queda confirmada únicamente cuando el servidor valida el pago requerido.</p></div></details>
-        <details class="faq-item"><summary><span>¿La reservación queda confirmada inmediatamente?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>No. Enviar una solicitud no aparta la fecha. Primero debe aceptarla el anfitrión y después debe quedar validado el pago requerido. El estado de la reservación dentro de ZEDE es la confirmación válida.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo sé si una fecha está disponible?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>El calendario muestra las fechas que el anfitrión mantiene disponibles. Una fecha ocupada por una reservación confirmada o bloqueada por el anfitrión no puede seleccionarse.</p></div></details>
-        <details class="faq-item"><summary><span>¿Puedo reservar para el mismo día?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Sí, cuando el espacio continúe disponible, el horario todavía sea válido y el anfitrión pueda responder. Las solicitudes de último minuto siguen sujetas a aceptación y, al faltar siete días o menos, requieren pago completo.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo realizo el pago?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Después de que el anfitrión acepte, ZEDE genera el pago mediante Mercado Pago. Podrás pagar el 100% o, cuando corresponda, apartar con 30% y cubrir el saldo indicado. Antes del lanzamiento, los pagos permanecen en modo de prueba y no generan cargos reales.</p></div></details>
-        <details class="faq-item"><summary><span>¿ZEDE cobra una tarifa de servicio?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Sí. La tarifa de servicio para el cliente es del 3% sobre el precio del evento y los extras aplicables. Se muestra por separado antes de enviar la solicitud y antes de pagar.</p></div></details>
-        <details class="faq-item"><summary><span>¿Qué pasa si mi pago no se completa?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>La reservación no se confirma hasta que ZEDE valide el movimiento con Mercado Pago. Si queda pendiente o falla, revisa el estado desde tu reservación y no repitas el pago mientras aparezca en revisión.</p></div></details>
-        <details class="faq-item"><summary><span>¿Qué sucede si mi solicitud es rechazada?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>No se genera una reservación ni un cobro. La fecha vuelve a mostrarse conforme a la disponibilidad del espacio y puedes buscar otra opción.</p></div></details>
-        <details class="faq-item"><summary><span>¿Puedo cancelar una reservación?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Sí, conforme a la política que ZEDE muestre antes del pago y al estado de la reservación. ZEDE no habilitará cobros reales hasta publicar la política comercial definitiva de cancelación y reembolso.</p></div></details>
-        <details class="faq-item"><summary><span>¿Qué sucede si el anfitrión cancela?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>ZEDE registrará la cancelación y aplicará la política vigente mostrada en tu reservación. Cuando existan pagos reales, cualquier devolución deberá confirmarse tanto por Mercado Pago como por ZEDE antes de considerarse concluida.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo funcionan los reembolsos?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Dependen del motivo, la anticipación y la política aceptada antes del pago. ZEDE calculará el importe aplicable y verificará el resultado con Mercado Pago; una captura o el regreso del navegador no sustituyen esa confirmación.</p></div></details>
-        <details class="faq-item"><summary><span>¿Puedo contactar al establecimiento?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Puedes comunicarte mediante las consultas y el chat de ZEDE. Los datos privados de contacto se protegen y solo se comparten cuando corresponda según la etapa de la reservación.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo sé que un espacio publicado en ZEDE es confiable?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>ZEDE revisa la información y las fotografías antes de publicar un espacio. Aun así, el anfitrión es responsable de que la publicación, permisos, disponibilidad, reglas y servicios sean correctos; ZEDE no anuncia seguros ni garantías económicas que todavía no existen.</p></div></details>
-        <details class="faq-item"><summary><span>¿Dónde puedo consultar mis reservaciones?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Inicia sesión y abre <strong>Reservaciones</strong>. Ahí puedes revisar solicitudes, próximas reservaciones, historial, pagos y cambios de estado.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo puedo contactar a soporte?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Escribe a <a href="mailto:contacto@zede.com.mx">contacto@zede.com.mx</a> e incluye el correo de tu cuenta y una descripción del problema. Nunca envíes contraseñas, CVV ni códigos de acceso.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo protege ZEDE mis datos personales?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>ZEDE aplica controles por cuenta, archivos privados y validaciones del lado del servidor. No almacena números completos de tarjeta, CVV ni contraseñas de Mercado Pago. Consulta el <a href="privacidad.html">Aviso de Privacidad</a>.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo puedo eliminar mi cuenta y mis datos?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>En ZEDE abre <strong>Perfil → Privacidad y datos → Eliminar mi cuenta</strong>. También puedes seguir las instrucciones de <a href="eliminar-cuenta.html">eliminación de cuenta</a>. Los datos sujetos a obligaciones legales podrán conservarse bloqueados durante el plazo aplicable.</p></div></details>
-      </div>
-    </div>
-
-    <div class="faq-panel" id="faq-anfitriones" role="tabpanel" aria-labelledby="tab-anfitriones" data-faq-panel="anfitriones" hidden>
-      <h3 class="faq-category-title">Para propietarios de espacios</h3>
-      <div class="faq-list">
-        <details class="faq-item"><summary><span>¿Cómo registro mi palapa, salón o espacio en ZEDE?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Crea tu cuenta, entra al perfil de anfitrión y selecciona <strong>Crear espacio</strong>. Completa la descripción, ubicación, capacidad, opciones de renta, servicios, reglas y fotografías; después envíalo a revisión de ZEDE.</p></div></details>
-        <details class="faq-item"><summary><span>¿Tiene costo registrar mi espacio?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>No. Registrar y enviar tu espacio a revisión es gratuito. ZEDE obtiene ingresos únicamente cuando se genera una reservación mediante la plataforma.</p></div></details>
-        <details class="faq-item"><summary><span>¿ZEDE cobra comisión?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Sí. La comisión para el anfitrión es del 10% sobre el precio del evento y los extras contratados mediante ZEDE. El cálculo se muestra de forma separada antes de aceptar la solicitud.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cuándo se cobra la comisión?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Se genera únicamente cuando una solicitud aceptada se convierte en reservación mediante un pago validado. Publicar el espacio, recibir consultas o rechazar una solicitud no genera comisión.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo funcionan los pagos?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>El cliente paga mediante Mercado Pago después de que aceptas la solicitud. ZEDE valida el importe y el estado en el servidor. Durante la etapa previa al lanzamiento los movimientos continúan en modo de prueba, sin cobros ni transferencias reales.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo recibo el dinero de una reservación?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Debes completar los datos del titular y conectar tu cuenta de Mercado Pago. Antes de activar pagos reales, ZEDE publicará el calendario de liberación, conciliación y reembolsos; el panel siempre mostrará el importe del evento, la comisión del 10% y el ingreso correspondiente.</p></div></details>
-        <details class="faq-item"><summary><span>¿Puedo establecer mis propios precios?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Sí. Tú defines las opciones de renta, capacidad, duración, horas adicionales y extras. ZEDE vuelve a calcular los importes en el servidor para evitar alteraciones.</p></div></details>
-        <details class="faq-item"><summary><span>¿Puedo elegir qué solicitudes de reservación aceptar?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Sí. Cada solicitud puede aceptarse o rechazarse desde tu panel. Para aceptarla y habilitar el pago debes tener completos los datos del titular y la conexión con Mercado Pago.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo administro las fechas disponibles de mi espacio?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Desde el calendario del anfitrión puedes consultar solicitudes, reservaciones y bloqueos. En la etapa inicial ZEDE permite una reservación por día para cada espacio.</p></div></details>
-        <details class="faq-item"><summary><span>¿Qué pasa si una fecha ya está ocupada?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>La fecha deja de estar disponible para nuevas reservaciones. ZEDE valida los cruces de fechas en el servidor para evitar que dos clientes confirmen el mismo espacio el mismo día.</p></div></details>
-        <details class="faq-item"><summary><span>¿Puedo bloquear fechas manualmente?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Sí. Puedes bloquear días desde tu calendario cuando el espacio no esté disponible por mantenimiento, eventos externos u otra razón.</p></div></details>
-        <details class="faq-item"><summary><span>¿Qué información necesito para registrar mi establecimiento?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Nombre, descripción, tipo de espacio, ciudad, estado, dirección y punto del mapa, capacidad, precios, horarios, servicios, reglas y fotografías. No necesitas datos fiscales ni Mercado Pago para enviarlo a revisión.</p></div></details>
-        <details class="faq-item"><summary><span>¿Necesito RFC para ser anfitrión?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Puedes registrar y enviar tu espacio sin RFC. El RFC es obligatorio para completar el perfil del titular, aceptar reservaciones y recibir pagos mediante Mercado Pago conforme a la estructura actual de ZEDE.</p></div></details>
-        <details class="faq-item"><summary><span>¿Puedo publicar más de un espacio?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Sí. Puedes crear varias publicaciones y administrar por separado sus precios, fotografías, servicios, ubicación y calendario.</p></div></details>
-        <details class="faq-item"><summary><span>¿Puedo modificar las fotografías, características y precios de mi espacio?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Sí. Puedes actualizar la información desde tu panel. Los cambios relevantes pueden requerir una nueva revisión antes de mostrarse públicamente.</p></div></details>
-        <details class="faq-item"><summary><span>¿Qué sucede si un cliente cancela?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>ZEDE aplicará la política que el cliente haya visto y aceptado antes del pago, considerando el estado y la anticipación. Los cobros reales no se habilitarán hasta que la política comercial definitiva esté publicada.</p></div></details>
-        <details class="faq-item"><summary><span>¿Qué sucede si el anfitrión necesita cancelar?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Debes registrar la cancelación cuanto antes desde ZEDE y contactar a soporte si existe un pago. La aplicación dejará constancia del cambio y cualquier reembolso solo se considerará concluido cuando lo confirmen Mercado Pago y ZEDE.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo protege ZEDE mis datos?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>El RFC, correo, teléfono y credenciales de Mercado Pago no aparecen en la publicación. Los tokens y secretos se mantienen en el servidor, y los documentos o datos privados utilizan controles de acceso. Revisa el <a href="privacidad.html">Aviso de Privacidad</a>.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo puedo contactar a soporte?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Escribe a <a href="mailto:contacto@zede.com.mx">contacto@zede.com.mx</a> desde el correo asociado a tu cuenta. Incluye el nombre del espacio y una descripción clara, sin compartir contraseñas ni códigos.</p></div></details>
-        <details class="faq-item"><summary><span>¿Cómo puedo dar de baja mi espacio de ZEDE?</span><span aria-hidden="true">+</span></summary><div class="faq-answer"><p>Puedes retirar la publicación desde la administración del espacio. Si tienes solicitudes, reservaciones, pagos o disputas pendientes, primero deberán atenderse conforme a su estado y a las obligaciones aplicables.</p></div></details>
-      </div>
-    </div>
-
-    <div class="faq-cta">
-      <div><p class="eyebrow">¿TODAVÍA TIENES DUDAS?</p><h3>Estamos para ayudarte.</h3></div>
-      <div class="faq-cta-actions">
-        <a class="button button-light" href="mailto:contacto@zede.com.mx?subject=Ayuda%20con%20ZEDE">Contactar a ZEDE</a>
-        <a class="button button-outline" href="/registro?tipo=anfitrion&amp;next=%2Fespacio" aria-label="Registrar mi espacio en ZEDE">Quiero registrar mi espacio</a>
-      </div>
-    </div>
-  </section>
-
-  <footer id="contacto">
-    <img class="footer-logo" src="assets/zede-logo.png" alt="ZEDE">
-    <div>
-      <strong>Contacto</strong>
-      <a href="mailto:contacto@zede.com.mx">contacto@zede.com.mx</a>
-    </div>
-    <div class="legal">
-      <a href="privacidad.html">Aviso de privacidad</a>
-      <a href="terminos.html">Términos y condiciones</a>
-      <a href="eliminar-cuenta.html">Eliminar mi cuenta</a>
-    </div>
-    <p class="copyright">© 2026 ZEDE. Todos los derechos reservados.</p>
-  </footer>
-  <script src="spaces.js?v=20261002-spaces" defer></script>
-  <script src="faq.js?v=20260926-faq" defer></script>
-</body>
-</html>
+<!DOCTYPE html><html  lang="en"><head><title data-rh="true"></title><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><style id="expo-reset">#root,body,html{height:100%}body{overflow:hidden}#root{display:flex}</style><style id="react-native-stylesheet">[stylesheet-group="0"]{}
+body{margin:0;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-search-results-button,input::-webkit-search-results-decoration{display:none;}
+[stylesheet-group="1"]{}
+.css-11aywtz{-moz-appearance:textfield;-webkit-appearance:none;background-color:rgba(0,0,0,0.00);border-bottom-left-radius:0px;border-bottom-right-radius:0px;border-top-left-radius:0px;border-top-right-radius:0px;border:0 solid black;box-sizing:border-box;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0px;padding:0px;resize:none;}
+.css-146c3p1{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:rgba(0,0,0,1.00);display:inline;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;list-style:none;margin:0px;padding:0px;position:relative;text-align:start;text-decoration:none;white-space:pre-wrap;word-wrap:break-word;}
+.css-1jxf684{background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;color:inherit;display:inline;font:inherit;list-style:none;margin:0px;padding:0px;position:relative;text-align:inherit;text-decoration:none;white-space:inherit;word-wrap:break-word;}
+.css-9pa8cd{bottom:0px;height:100%;left:0px;opacity:0;position:absolute;right:0px;top:0px;width:100%;z-index:-1;}
+.css-g5y9jx{align-content:flex-start;align-items:stretch;background-color:rgba(0,0,0,0.00);border:0 solid black;box-sizing:border-box;display:flex;flex-basis:auto;flex-direction:column;flex-shrink:0;list-style:none;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;text-decoration:none;z-index:0;}
+[stylesheet-group="2"]{}
+.r-10jnvle{border-bottom-left-radius:21px;border-bottom-right-radius:21px;border-top-left-radius:21px;border-top-right-radius:21px;}
+.r-11mg6pl{border-bottom-color:rgba(255,255,255,1.00);border-left-color:rgba(255,255,255,1.00);border-right-color:rgba(255,255,255,1.00);border-top-color:rgba(255,255,255,1.00);}
+.r-13awgt0{flex:1;}
+.r-13o80l4{border-bottom-color:rgba(215,225,214,1.00);border-left-color:rgba(215,225,214,1.00);border-right-color:rgba(215,225,214,1.00);border-top-color:rgba(215,225,214,1.00);}
+.r-16uyjmq{border-bottom-left-radius:22px;border-bottom-right-radius:22px;border-top-left-radius:22px;border-top-right-radius:22px;}
+.r-1867qdf{border-bottom-left-radius:16px;border-bottom-right-radius:16px;border-top-left-radius:16px;border-top-right-radius:16px;}
+.r-18l2oqg{margin:7px;}
+.r-18w2pjg{border-bottom-color:rgba(216,223,210,1.00);border-left-color:rgba(216,223,210,1.00);border-right-color:rgba(216,223,210,1.00);border-top-color:rgba(216,223,210,1.00);}
+.r-1awa8pu{border-bottom-color:rgba(101,119,134,1.00);border-left-color:rgba(101,119,134,1.00);border-right-color:rgba(101,119,134,1.00);border-top-color:rgba(101,119,134,1.00);}
+.r-1bq2mok{margin:3px;}
+.r-1brh785{border-bottom-color:rgba(126,165,137,1.00);border-left-color:rgba(126,165,137,1.00);border-right-color:rgba(126,165,137,1.00);border-top-color:rgba(126,165,137,1.00);}
+.r-1bux6q{border-bottom-color:rgba(201,223,201,1.00);border-left-color:rgba(201,223,201,1.00);border-right-color:rgba(201,223,201,1.00);border-top-color:rgba(201,223,201,1.00);}
+.r-1d4xg89{border-bottom-color:rgba(170,184,194,1.00);border-left-color:rgba(170,184,194,1.00);border-right-color:rgba(170,184,194,1.00);border-top-color:rgba(170,184,194,1.00);}
+.r-1dzdj1l{border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top-left-radius:10px;border-top-right-radius:10px;}
+.r-1f0042m{border-bottom-left-radius:5px;border-bottom-right-radius:5px;border-top-left-radius:5px;border-top-right-radius:5px;}
+.r-1fgwjfx{border-bottom-color:rgba(212,222,213,1.00);border-left-color:rgba(212,222,213,1.00);border-right-color:rgba(212,222,213,1.00);border-top-color:rgba(212,222,213,1.00);}
+.r-1fuqb1j{border-bottom-left-radius:24px;border-bottom-right-radius:24px;border-top-left-radius:24px;border-top-right-radius:24px;}
+.r-1gb1gic{border-bottom-left-radius:23px;border-bottom-right-radius:23px;border-top-left-radius:23px;border-top-right-radius:23px;}
+.r-1idfib4{padding:22px;}
+.r-1j16mh1{border-bottom-left-radius:100%;border-bottom-right-radius:100%;border-top-left-radius:100%;border-top-right-radius:100%;}
+.r-1jkafct{border-bottom-left-radius:2px;border-bottom-right-radius:2px;border-top-left-radius:2px;border-top-right-radius:2px;}
+.r-1jyn79y{border-bottom-color:rgba(0,150,136,1.00);border-left-color:rgba(0,150,136,1.00);border-right-color:rgba(0,150,136,1.00);border-top-color:rgba(0,150,136,1.00);}
+.r-1m7mu0x{border-bottom-left-radius:36px;border-bottom-right-radius:36px;border-top-left-radius:36px;border-top-right-radius:36px;}
+.r-1mltpjw{border-bottom-color:rgba(85,116,95,1.00);border-left-color:rgba(85,116,95,1.00);border-right-color:rgba(85,116,95,1.00);border-top-color:rgba(85,116,95,1.00);}
+.r-1mvtdk4{border-bottom-color:rgba(215,225,215,1.00);border-left-color:rgba(215,225,215,1.00);border-right-color:rgba(215,225,215,1.00);border-top-color:rgba(215,225,215,1.00);}
+.r-1mxhqmb{border-bottom-left-radius:11px;border-bottom-right-radius:11px;border-top-left-radius:11px;border-top-right-radius:11px;}
+.r-1omz8ua{border-bottom-color:rgba(202,216,205,1.00);border-left-color:rgba(202,216,205,1.00);border-right-color:rgba(202,216,205,1.00);border-top-color:rgba(202,216,205,1.00);}
+.r-1pcd2l5{padding:20px;}
+.r-1phboty{border-bottom-style:solid;border-left-style:solid;border-right-style:solid;border-top-style:solid;}
+.r-1q9bdsx{border-bottom-left-radius:12px;border-bottom-right-radius:12px;border-top-left-radius:12px;border-top-right-radius:12px;}
+.r-1qsk4np{overflow-x:clip;overflow-y:clip;}
+.r-1rvyss1{border-bottom-color:rgba(255,255,255,0.20);border-left-color:rgba(255,255,255,0.20);border-right-color:rgba(255,255,255,0.20);border-top-color:rgba(255,255,255,0.20);}
+.r-1sbahrg{padding:28px;}
+.r-1slz7xr{padding:14px;}
+.r-1sp51qo{padding:10px;}
+.r-1txcine{border-bottom-left-radius:13px;border-bottom-right-radius:13px;border-top-left-radius:13px;border-top-right-radius:13px;}
+.r-1udh08x{overflow-x:hidden;overflow-y:hidden;}
+.r-1ulf27d{border-bottom-color:rgba(255,255,255,0.15);border-left-color:rgba(255,255,255,0.15);border-right-color:rgba(255,255,255,0.15);border-top-color:rgba(255,255,255,0.15);}
+.r-1uu6nss{padding:5px;}
+.r-1wz3a5r{border-bottom-color:rgba(216,224,214,1.00);border-left-color:rgba(216,224,214,1.00);border-right-color:rgba(216,224,214,1.00);border-top-color:rgba(216,224,214,1.00);}
+.r-1x322ni{border-bottom-color:rgba(215,225,217,1.00);border-left-color:rgba(215,225,217,1.00);border-right-color:rgba(215,225,217,1.00);border-top-color:rgba(215,225,217,1.00);}
+.r-1xfd6ze{border-bottom-left-radius:8px;border-bottom-right-radius:8px;border-top-left-radius:8px;border-top-right-radius:8px;}
+.r-1ylenci{border-bottom-left-radius:15px;border-bottom-right-radius:15px;border-top-left-radius:15px;border-top-right-radius:15px;}
+.r-494qqr{padding:32px;}
+.r-4a18lf{border-bottom-color:rgba(255,0,0,1.00);border-left-color:rgba(255,0,0,1.00);border-right-color:rgba(255,0,0,1.00);border-top-color:rgba(255,0,0,1.00);}
+.r-4zvafu{border-bottom-left-radius:26px;border-bottom-right-radius:26px;border-top-left-radius:26px;border-top-right-radius:26px;}
+.r-5t7aoe{border-bottom-left-radius:17px;border-bottom-right-radius:17px;border-top-left-radius:17px;border-top-right-radius:17px;}
+.r-60ke3l{border-bottom-color:rgba(0,128,0,1.00);border-left-color:rgba(0,128,0,1.00);border-right-color:rgba(0,128,0,1.00);border-top-color:rgba(0,128,0,1.00);}
+.r-6ncur5{border-bottom-left-radius:18px;border-bottom-right-radius:18px;border-top-left-radius:18px;border-top-right-radius:18px;}
+.r-6t2glc{border-bottom-left-radius:40px;border-bottom-right-radius:40px;border-top-left-radius:40px;border-top-right-radius:40px;}
+.r-9x6qib{border-bottom-color:rgba(204,214,221,1.00);border-left-color:rgba(204,214,221,1.00);border-right-color:rgba(204,214,221,1.00);border-top-color:rgba(204,214,221,1.00);}
+.r-a1yn9n{border-bottom-left-radius:28px;border-bottom-right-radius:28px;border-top-left-radius:28px;border-top-right-radius:28px;}
+.r-bztko3{overflow-x:visible;overflow-y:visible;}
+.r-cpet4d{border-bottom-left-radius:999px;border-bottom-right-radius:999px;border-top-left-radius:999px;border-top-right-radius:999px;}
+.r-crgep1{margin:0px;}
+.r-d045u9{border-bottom-width:2px;border-left-width:2px;border-right-width:2px;border-top-width:2px;}
+.r-d23pfw{padding:24px;}
+.r-dzzjia{border-bottom-color:rgba(22,61,42,1.00);border-left-color:rgba(22,61,42,1.00);border-right-color:rgba(22,61,42,1.00);border-top-color:rgba(22,61,42,1.00);}
+.r-edyy15{padding:8px;}
+.r-eotntm{border-bottom-color:rgba(191,208,195,1.00);border-left-color:rgba(191,208,195,1.00);border-right-color:rgba(191,208,195,1.00);border-top-color:rgba(191,208,195,1.00);}
+.r-fx7oqy{border-bottom-color:rgba(0,0,255,1.00);border-left-color:rgba(0,0,255,1.00);border-right-color:rgba(0,0,255,1.00);border-top-color:rgba(0,0,255,1.00);}
+.r-j2a8vo{border-bottom-color:rgba(234,218,168,1.00);border-left-color:rgba(234,218,168,1.00);border-right-color:rgba(234,218,168,1.00);border-top-color:rgba(234,218,168,1.00);}
+.r-j5qxxq{border-bottom-color:rgba(214,169,73,1.00);border-left-color:rgba(214,169,73,1.00);border-right-color:rgba(214,169,73,1.00);border-top-color:rgba(214,169,73,1.00);}
+.r-jhjn2y{border-bottom-color:rgba(199,215,201,1.00);border-left-color:rgba(199,215,201,1.00);border-right-color:rgba(199,215,201,1.00);border-top-color:rgba(199,215,201,1.00);}
+.r-k3250r{flex:1.35;}
+.r-krxsd3{display:-webkit-box;}
+.r-l5efjz{border-bottom-color:rgba(220,233,223,1.00);border-left-color:rgba(220,233,223,1.00);border-right-color:rgba(220,233,223,1.00);border-top-color:rgba(220,233,223,1.00);}
+.r-nsbfu8{padding:16px;}
+.r-nsiyw1{border-bottom-left-radius:32px;border-bottom-right-radius:32px;border-top-left-radius:32px;border-top-right-radius:32px;}
+.r-p4db1g{border-bottom-color:rgba(185,205,191,1.00);border-left-color:rgba(185,205,191,1.00);border-right-color:rgba(185,205,191,1.00);border-top-color:rgba(185,205,191,1.00);}
+.r-pk27ss{border-bottom-color:rgba(202,217,201,1.00);border-left-color:rgba(202,217,201,1.00);border-right-color:rgba(202,217,201,1.00);border-top-color:rgba(202,217,201,1.00);}
+.r-q81ovl{padding:11px;}
+.r-qgi43r{padding:17px;}
+.r-rs99b7{border-bottom-width:1px;border-left-width:1px;border-right-width:1px;border-top-width:1px;}
+.r-s88bda{display:contents;}
+.r-t23y2h{border-bottom-left-radius:14px;border-bottom-right-radius:14px;border-top-left-radius:14px;border-top-right-radius:14px;}
+.r-t60dpp{padding:0px;}
+.r-tuq35u{padding:4px;}
+.r-wg31gx{border-bottom-color:rgba(49,53,56,1.00);border-left-color:rgba(49,53,56,1.00);border-right-color:rgba(49,53,56,1.00);border-top-color:rgba(49,53,56,1.00);}
+.r-whuqzp{padding:18px;}
+.r-ww7r84{border-bottom-color:rgba(225,231,221,1.00);border-left-color:rgba(225,231,221,1.00);border-right-color:rgba(225,231,221,1.00);border-top-color:rgba(225,231,221,1.00);}
+.r-xoduu5{display:inline-flex;}
+.r-xyw6el{padding:12px;}
+.r-y47klf{border-bottom-left-radius:20px;border-bottom-right-radius:20px;border-top-left-radius:20px;border-top-right-radius:20px;}
+.r-ywje51{margin:auto;}
+.r-z2wwpe{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;}
+[stylesheet-group="2.1"]{}
+.r-11f147o{padding-bottom:8px;padding-top:8px;}
+.r-11gswi8{padding-left:3px;padding-right:3px;}
+.r-1559e4e{padding-bottom:2px;padding-top:2px;}
+.r-17c3tha{padding-left:17px;padding-right:17px;}
+.r-17q4wm6{margin-left:5px;margin-right:5px;}
+.r-184id4b{margin-bottom:12px;margin-top:12px;}
+.r-18c5d7m{padding-left:6px;padding-right:6px;}
+.r-1d7mnkm{padding-bottom:15px;padding-top:15px;}
+.r-1e084wi{padding-left:0px;padding-right:0px;}
+.r-1la3zjv{padding-bottom:18px;padding-top:18px;}
+.r-1ml3abn{padding-bottom:14px;padding-top:14px;}
+.r-1mmae3n{padding-bottom:12px;padding-top:12px;}
+.r-1ntr0p{padding-left:5px;padding-right:5px;}
+.r-1rsorjc{padding-left:36px;padding-right:36px;}
+.r-1s5swlz{padding-bottom:9px;padding-top:9px;}
+.r-1wci7jc{padding-left:28px;padding-right:28px;}
+.r-1yd117h{padding-bottom:7px;padding-top:7px;}
+.r-284m6k{padding-left:18px;padding-right:18px;}
+.r-3o4zer{padding-left:12px;padding-right:12px;}
+.r-3pj75a{padding-left:16px;padding-right:16px;}
+.r-cxgwc0{padding-left:24px;padding-right:24px;}
+.r-f8sm7e{margin-left:auto;margin-right:auto;}
+.r-gu64tb{padding-left:14px;padding-right:14px;}
+.r-h0bjfv{padding-left:22px;padding-right:22px;}
+.r-is05cd{padding-left:8px;padding-right:8px;}
+.r-jdiy1a{margin-left:11px;margin-right:11px;}
+.r-jusfrs{margin-left:12px;margin-right:12px;}
+.r-kritb0{padding-bottom:11px;padding-top:11px;}
+.r-n5f61p{margin-bottom:3px;margin-top:3px;}
+.r-n7gxbd{padding-left:4px;padding-right:4px;}
+.r-qbhcsz{padding-bottom:64px;padding-top:64px;}
+.r-u4gi5m{padding-left:13px;padding-right:13px;}
+.r-u9wvl5{padding-left:20px;padding-right:20px;}
+.r-ubg91z{padding-left:15px;padding-right:15px;}
+.r-ugi1tw{padding-left:5%;padding-right:5%;}
+.r-vuvdlw{padding-bottom:6px;padding-top:6px;}
+.r-w7s2jr{padding-bottom:16px;padding-top:16px;}
+.r-x78iom{margin-bottom:22px;margin-top:22px;}
+.r-ytbthy{padding-bottom:10px;padding-top:10px;}
+.r-ywh0we{padding-bottom:13px;padding-top:13px;}
+[stylesheet-group="2.2"]{}
+.r-10s2tm5{left:0%;}
+.r-16o8guy{right:100%;}
+.r-1a11zyx{margin-right:12px;}
+.r-1cwvpvk{margin-left:12px;}
+.r-1e97lx8{margin-right:3px;}
+.r-1euzeng{padding-left:24px;}
+.r-1g4tz6n{margin-right:-14.5px;}
+.r-1h31txp{padding-right:16px;}
+.r-1lhn9r{margin-left:-14.5px;}
+.r-1sqnqi2{margin-left:3px;}
+.r-1vl2501{padding-right:24px;}
+.r-9mo606{margin-right:10px;}
+.r-c59us2{left:-3px;}
+.r-dqe1q{right:0%;}
+.r-qb41rp{margin-right:5px;}
+.r-rci37q{left:100%;}
+.r-uhung1{margin-left:10px;}
+.r-vpmibe{right:-3px;}
+.r-w67my2{padding-left:16px;}
+.r-wizibn{margin-left:5px;}
+[stylesheet-group="3"]{}
+.r-102gzdx{height:52px;}
+.r-105ug2t{pointer-events:auto!important;}
+.r-109y4c4{height:1px;}
+.r-10b5y5f{letter-spacing:1.4px;}
+.r-10gryf7{min-height:56px;}
+.r-10kk1k2{color:rgba(46,139,87,1.00);}
+.r-10ptun7{height:16px;}
+.r-10q0wlk{background-color:rgba(221,237,221,1.00);}
+.r-10udfyf{color:rgba(70,96,82,1.00);}
+.r-10v3vxq{transform:scaleX(-1);}
+.r-10x49cs{font-size:10px;}
+.r-10xqauy{padding-top:env(safe-area-inset-top);}
+.r-10yl4k{line-height:21px;}
+.r-11j9u27{visibility:hidden;}
+.r-11k35u9{color:rgba(106,123,112,1.00);}
+.r-11mpjr4{background-color:rgba(223,223,223,1.00);}
+.r-11niif6{max-width:800px;}
+.r-11rk87y{padding-bottom:32px;}
+.r-11udlyb{background-color:rgba(0,150,136,1.00);}
+.r-11v9fek{min-width:180px;}
+.r-11yh6sk{overflow-x:hidden;}
+.r-12f6czt{top:17px;}
+.r-12oq381{top:67px;}
+.r-12pp1o0{top:5px;}
+.r-12sks89{min-height:22px;}
+.r-12vffkv>* {pointer-events:auto;}
+.r-12vffkv{pointer-events:none!important;}
+.r-12wypgc{color:rgba(24,45,34,1.00);}
+.r-135wba7{line-height:24px;}
+.r-13782x6{color:rgba(83,106,91,1.00);}
+.r-13aq9py{animation-name:r-1iq689l;}
+.r-13f38t7{background-color:rgba(229,235,217,1.00);}
+.r-13l2t4g{border-right-width:1px;}
+.r-13q5f3s{min-height:112px;}
+.r-13qz1uu{width:100%;}
+.r-13tjlyg{transition-duration:0.1s;}
+.r-146t82q{line-height:44px;}
+.r-1472mwg{height:24px;}
+.r-14gqq1x{margin-top:4px;}
+.r-14ijz5o{font-size:38px;}
+.r-14lw9ot{background-color:rgba(255,255,255,1.00);}
+.r-14qjzug{max-width:250px;}
+.r-14sbq61{background-color:rgba(33,150,243,1.00);}
+.r-14yzgew{line-height:18px;}
+.r-150rngu{-webkit-overflow-scrolling:touch;}
+.r-158a9ln{color:rgba(161,120,24,1.00);}
+.r-1599tul{gap:3px;}
+.r-161ttwi{left:12px;}
+.r-16dba41{font-weight:400;}
+.r-16krg75{letter-spacing:-1px;}
+.r-16pcm1t{gap:20px;}
+.r-16y2uox{flex-grow:1;}
+.r-173mn98{align-self:flex-end;}
+.r-173mzie{transform:scaleY(-1);}
+.r-1777fci{justify-content:center;}
+.r-17bb2tj{animation-duration:0.75s;}
+.r-17eu2do{color:rgba(224,233,222,1.00);}
+.r-17leim2{background-repeat:repeat;}
+.r-17rnw9f{line-height:30px;}
+.r-17s6mgv{justify-content:flex-end;}
+.r-17tb59b{opacity:0.7;}
+.r-17tloay{opacity:0.6;}
+.r-17u3ijr{background-color:rgba(155,161,166,0.27);}
+.r-184en5c{z-index:1;}
+.r-18nhz7w{top:-3px;}
+.r-18u1ve8{color:rgba(255,255,255,0.40);}
+.r-18u37iz{flex-direction:row;}
+.r-18uzet7{color:rgba(39,103,71,1.00);}
+.r-18xpgd7{color:rgba(73,96,82,1.00);}
+.r-18yzcnr{height:22px;}
+.r-195d4m8{height:46px;}
+.r-198d08l{font-size:27px;}
+.r-19deycd{border-right-color:rgba(227,232,225,1.00);}
+.r-19oahor{font-size:64px;}
+.r-19qrga8{margin-top:3px;}
+.r-19t21lq{color:rgba(188,210,154,1.00);}
+.r-19wmn03{width:20px;}
+.r-19yznuf{min-height:52px;}
+.r-19z077z{touch-action:none;}
+.r-1a1dyw{min-height:50px;}
+.r-1a2p6p6{-webkit-text-decoration-style:solid;text-decoration-style:solid;}
+.r-1a8r3js{margin-bottom:11px;}
+.r-1abnn5w{animation-play-state:paused;}
+.r-1acpoxo{width:36px;}
+.r-1addjxt{background-color:rgba(22,61,42,0.80);}
+.r-1aiqnjv{font-family:monospace,monospace;}
+.r-1aockid{width:40px;}
+.r-1awozwy{align-items:center;}
+.r-1ay1djp{animation-duration:1s;}
+.r-1b43r93{font-size:14px;}
+.r-1ba3dne{background-color:rgba(244,225,198,0.18);}
+.r-1blnp2b{width:72px;}
+.r-1blvdjr{font-size:23px;}
+.r-1bmzez4{color:rgba(161,60,52,1.00);}
+.r-1bv1gdz{background-color:rgba(231,238,230,1.00);}
+.r-1bw8db1{min-width:46%;}
+.r-1bymd8e{margin-top:2px;}
+.r-1c6unfx{forced-color-adjust:none;}
+.r-1c85bru{width:270px;}
+.r-1c92x1x{line-height:31px;}
+.r-1cad53l{margin-bottom:14px;}
+.r-1cfa9r5{background-color:rgba(227,239,228,1.00);}
+.r-1cfo2ev{letter-spacing:1.7px;}
+.r-1chd876{aspect-ratio:1.7309941520467835;}
+.r-1cmskyw{max-width:640px;}
+.r-1cmwbt1{gap:8px;}
+.r-1cwl3u0{line-height:16px;}
+.r-1d2f490{left:0px;}
+.r-1d5kdc7{flex-direction:column-reverse;}
+.r-1d7gupr{margin-top:22px;}
+.r-1dciyrv{height:170px;}
+.r-1ddef8g{-webkit-text-decoration-line:underline;text-decoration-line:underline;}
+.r-1dernwh{height:70%;}
+.r-1dfn399{min-width:50%;}
+.r-1ei5mc7{cursor:inherit;}
+.r-1enofrn{font-size:12px;}
+.r-1euycsn{flex-direction:row-reverse;}
+.r-1ewcgjf{box-shadow:0px 1px 3px rgba(0,0,0,0.5);}
+.r-1ey881g{gap:7px;}
+.r-1f12m5q{left:14px;}
+.r-1f12yv3{min-height:154px;}
+.r-1fdih9r{gap:24px;}
+.r-1ff274t{text-align:right;}
+.r-1ffj0ar{background-color:rgba(0,0,0,0.40);}
+.r-1fze3kp{color:rgba(82,103,90,1.00);}
+.r-1g80hic{opacity:0.8;}
+.r-1g94qm0{margin-top:5px;}
+.r-1ge9hsw{max-width:960px;}
+.r-1ghxqbu{font-variant:tabular-nums;}
+.r-1gkfh8e{font-size:11px;}
+.r-1h0z5md{justify-content:flex-start;}
+.r-1h2t8mc{width:0px;}
+.r-1h4l6i1{background-color:rgba(231,236,229,1.00);}
+.r-1h8ys4a{padding-top:4px;}
+.r-1habvwh{align-items:flex-start;}
+.r-1hdijn0{max-width:850px;}
+.r-1i10wst{font-size:18px;}
+.r-1i6wzkk{-moz-transition-property:opacity;-webkit-transition-property:opacity;transition-property:opacity;}
+.r-1i71y14{gap:14px;}
+.r-1i9tzeg{max-width:1180px;}
+.r-1ikidpy{letter-spacing:0.5px;}
+.r-1iln25a{word-wrap:normal;}
+.r-1inkyih{font-size:17px;}
+.r-1iusvr4{flex-basis:0px;}
+.r-1iww7jx{width:28px;}
+.r-1janqcz{width:16px;}
+.r-1jkjb{margin-left:8px;}
+.r-1k4p9wd{background-color:rgba(247,245,239,1.00);}
+.r-1kb76zh{margin-right:8px;}
+.r-1kfrs79{font-weight:600;}
+.r-1ki50wl{background-color:rgba(16,42,29,0.72);}
+.r-1kihuf0{align-self:center;}
+.r-1knq54c{aspect-ratio:5.125;}
+.r-1kz6sp{width:52px;}
+.r-1ld3bg{top:-4px;}
+.r-1ldzwu0{animation-timing-function:linear;}
+.r-1lh3azm{height:74px;}
+.r-1loqt21{cursor:pointer;}
+.r-1lzx9sp{color:rgba(39,74,55,1.00);}
+.r-1m3f1tn{background-color:rgba(255,255,255,0.93);}
+.r-1mhb1uw{width:42px;}
+.r-1mlwlqe{flex-basis:auto;}
+.r-1moh23t{bottom:16px;}
+.r-1mrlafo{background-position:0;}
+.r-1muvv40{animation-iteration-count:infinite;}
+.r-1niwhzg{background-color:rgba(0,0,0,0.00);}
+.r-1nlw0im{bottom:8px;}
+.r-1no09lo{margin-top:28px;}
+.r-1nxhmzv{margin-bottom:28px;}
+.r-1ny4l3l{outline-style:none;}
+.r-1ocf4r9{scroll-snap-type:y mandatory;}
+.r-1od2jal{font-weight:300;}
+.r-1oi4jap{color:rgba(46,118,82,1.00);}
+.r-1onu96p{border-curve:continuous;}
+.r-1oszu61{align-items:stretch;}
+.r-1otgn73{touch-action:manipulation;}
+.r-1ozqkpa{text-transform:capitalize;}
+.r-1p0dtai{bottom:0px;}
+.r-1pgswnq{right:12px;}
+.r-1pi0ew5{background-color:rgba(201,166,84,1.00);}
+.r-1pi2tsx{height:100%;}
+.r-1pi6541{background-color:rgba(255,255,255,0.96);}
+.r-1pl7oy7{min-height:48px;}
+.r-1pm8pkb{font-family:Courier;}
+.r-1pnwn9g{gap:18px;}
+.r-1pz39u2{align-self:stretch;}
+.r-1q8c80s{height:190px;}
+.r-1qd0xha{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+.r-1qd7xl{top:12px;}
+.r-1qrpayz{color:rgba(98,117,104,1.00);}
+.r-1qulhi1{animation-name:r-1pzkwqh;}
+.r-1qvxi7a{background-color:rgba(255,247,226,1.00);}
+.r-1r4fvd0{color:rgba(82,169,255,1.00);}
+.r-1r74h94{left:8px;}
+.r-1r8g8re{height:36px;}
+.r-1rnoaur{overflow-y:auto;}
+.r-1s6l8cg{min-width:170px;}
+.r-1sg8ghl{z-index:1000;}
+.r-1siegso{box-shadow:0px 9px 22px rgba(0,0,0,0.22);}
+.r-1ssbvtb{gap:12px;}
+.r-1sxrcry{background-size:auto;}
+.r-1tdekmv{background-color:rgba(214,169,73,1.00);}
+.r-1tmngid{color:rgba(97,117,104,1.00);}
+.r-1ua0l07{font-family:var(--font-mono);}
+.r-1udbk01{text-overflow:ellipsis;}
+.r-1ugchlj{height:44px;}
+.r-1ui5ee8{font-size:32px;}
+.r-1ujkv8a{aspect-ratio:1;}
+.r-1upy0dh{letter-spacing:2px;}
+.r-1uwte3a{padding-bottom:40px;}
+.r-1v8gn6s{max-width:310px;}
+.r-1vedqfz{color:rgba(113,130,115,1.00);}
+.r-1vr29t4{font-weight:800;}
+.r-1w2pmg{height:0px;}
+.r-1w6e6rj{flex-wrap:wrap;}
+.r-1wbh5a2{flex-shrink:1;}
+.r-1wtj0ep{justify-content:space-between;}
+.r-1wxlw5s{color:rgba(194,217,168,1.00);}
+.r-1wyyakw{z-index:-1;}
+.r-1wzrnnt{margin-top:16px;}
+.r-1xcajam{position:fixed;}
+.r-1xno5lw{font-size:35px;}
+.r-1xnzce8{-moz-user-select:text;-webkit-user-select:text;user-select:text;}
+.r-1xpsq9i{box-shadow:0px 3px 3px rgba(0, 0, 0, 0.33);}
+.r-1xzupcd{width:13px;}
+.r-1y00bll{gap:9px;}
+.r-1y7e96w{min-width:22px;}
+.r-1yc6c17{background-color:rgba(255,255,255,0.97);}
+.r-1yef0xd{animation-name:r-11cv4x;}
+.r-2agvir{line-height:34px;}
+.r-2eszeu::-webkit-scrollbar{display:none}
+.r-2eszeu{scrollbar-width:none;}
+.r-2o15sn{padding-bottom:45px;}
+.r-2wkimn{width:265px;}
+.r-30o5oe{-moz-appearance:none;-ms-appearance:none;-webkit-appearance:none;appearance:none;}
+.r-356f0p{letter-spacing:0.35px;}
+.r-37tt59{line-height:32px;}
+.r-3egmai{width:123px;}
+.r-3h7h6w{color:rgba(113,128,120,1.00);}
+.r-3i2nvb{font-size:36px;}
+.r-3mc0re{right:8px;}
+.r-3s2u2q{white-space:nowrap;}
+.r-417010{z-index:0;}
+.r-4gszlv{background-size:cover;}
+.r-4v7adb{height:5px;}
+.r-4xy98{max-width:620px;}
+.r-580adz{gap:5px;}
+.r-5fcqz0{line-height:17px;}
+.r-5kkj8d{border-top-width:1px;}
+.r-5oul0u{margin-bottom:8px;}
+.r-60vfwk{min-width:1px;}
+.r-633pao>* {pointer-events:none;}
+.r-633pao{pointer-events:none!important;}
+.r-6dt33c{opacity:1;}
+.r-6gpygo{margin-bottom:12px;}
+.r-6taxm2:-ms-input-placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-6taxm2::-moz-placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-6taxm2::-webkit-input-placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-6taxm2::placeholder{color:var(--placeholderTextColor);opacity:1;}
+.r-6uxfom{margin-left:24px;}
+.r-6vrn8a{letter-spacing:4px;}
+.r-726pan{width:31px;}
+.r-76blku{height:21px;}
+.r-76uxam{height:82px;}
+.r-7a29px{width:64px;}
+.r-7bouqp{width:96px;}
+.r-7cikom{font-size:inherit;}
+.r-7q8q6z{cursor:default;}
+.r-84ji2h{max-width:330px;}
+.r-878mqg{box-shadow:0px 8px 16px rgba(22,61,42,0.18);}
+.r-8akbws{-webkit-box-orient:vertical;}
+.r-8ay8q1{letter-spacing:0.1px;}
+.r-8n0zxx{min-width:112px;}
+.r-8v0hkn{box-shadow:0px 4px 10px rgba(22,61,42,0.20);}
+.r-95jzfe{padding-top:16px;}
+.r-97e31f{padding-bottom:env(safe-area-inset-bottom);}
+.r-99qyqp{max-width:210px;}
+.r-9aw3ui{gap:4px;}
+.r-9daxd3{animation-duration:250ms;}
+.r-9j76zr{background-color:rgba(22,61,42,1.00);}
+.r-9un0md{background-color:rgba(244,248,243,1.00);}
+.r-a023e6{font-size:15px;}
+.r-a1w0r5{width:48%;}
+.r-a2tzq0{justify-content:space-around;}
+.r-a7jq2l{color:rgba(31,104,68,1.00);}
+.r-ad9o1y{vertical-align:top;}
+.r-adyw6z{font-size:20px;}
+.r-agouwx{transform:translateZ(0);}
+.r-ah5dr5>* {pointer-events:none;}
+.r-ah5dr5{pointer-events:auto!important;}
+.r-aruset{font-weight:200;}
+.r-atwxm4{color:rgba(101,80,14,1.00);}
+.r-awx8vy{box-shadow:0px 7px 16px rgba(22,61,42,0.22);}
+.r-axlblu{font-size:29px;}
+.r-b0fjal{width:14.28%;}
+.r-b88u0q{font-weight:700;}
+.r-b8lwoo{width:100px;}
+.r-baieyd{background-color:rgba(181,45,45,1.00);}
+.r-bcqeeo{min-width:0px;}
+.r-bgnin{min-width:150px;}
+.r-bhdy8w{line-height:72px;}
+.r-bi4vy9{transform:translateY(100%);}
+.r-bnwqim{position:relative;}
+.r-bt1l66{min-height:20px;}
+.r-buy8e9{overflow-y:hidden;}
+.r-bv2aro{padding-left:env(safe-area-inset-left);}
+.r-c68hjy{color:rgba(161,161,161,1.00);}
+.r-cpa5s6{scroll-snap-align:start;}
+.r-cqee49{color:rgba(0,0,0,1.00);}
+.r-cv4lhi{font-size:21px;}
+.r-d0yd03{background-color:rgba(237,243,237,1.00);}
+.r-dfe81l{min-height:46px;}
+.r-dkge59{background-color:rgba(170,184,194,1.00);}
+.r-dnmrzs{max-width:100%;}
+.r-dukzhd{right:14px;}
+.r-e1k2in{right:16px;}
+.r-e6ktq0{gap:32px;}
+.r-eafdt9{transition-duration:0.15s;}
+.r-ebwn4k{animation-name:r-q67da2;}
+.r-ehq7j7{background-size:contain;}
+.r-eqz5dr{flex-direction:column;}
+.r-erflm7{color:rgba(107,125,113,1.00);}
+.r-eu3ka{height:40px;}
+.r-evnaw{font-size:22px;}
+.r-eyq925{background-color:rgba(221,229,221,1.00);}
+.r-f4gmv6{gap:16px;}
+.r-f5cfds{min-height:160px;}
+.r-fdjqy7{text-align:left;}
+.r-fg35g0{color:rgba(22,61,42,1.00);}
+.r-fmabhn{border-bottom-color:rgba(227,232,225,1.00);}
+.r-foe95m{letter-spacing:-0.4px;}
+.r-g3mlsw{animation-name:r-t2lo5v;}
+.r-gbicac{color:rgba(182,135,18,1.00);}
+.r-gcgze2{min-height:110px;}
+.r-gg1ace{line-height:43px;}
+.r-ghxds0{transform:translateY(0%);}
+.r-gtdqiz{position:-webkit-sticky;position:sticky;}
+.r-h00tyh{box-shadow:0px 3px 6px rgba(22,61,42,0.18);}
+.r-h0d30l{height:28px;}
+.r-h1js2l{font-size:25px;}
+.r-h3s6tt{height:48px;}
+.r-h7zev3{top:14px;}
+.r-hbpseb{line-height:22px;}
+.r-hjklzo{line-height:19px;}
+.r-hnu01a{gap:15px;}
+.r-hu34j{background-color:rgba(41,78,58,1.00);}
+.r-hxflta{padding-right:env(safe-area-inset-right);}
+.r-i933xg{letter-spacing:1.5px;}
+.r-icoktb{opacity:0.5;}
+.r-io3v4h{background-color:rgba(221,233,217,1.00);}
+.r-ipm5af{top:0px;}
+.r-iv112m{width:78px;}
+.r-jvuzdy{top:-5px;}
+.r-jwli3a{color:rgba(255,255,255,1.00);}
+.r-k200y{align-self:flex-start;}
+.r-kc8jnq{margin-top:6px;}
+.r-kemksi{background-color:rgba(0,0,0,1.00);}
+.r-kgusq2{line-height:52px;}
+.r-kizejy{color:rgba(155,161,166,1.00);}
+.r-knv0ih{margin-top:8px;}
+.r-kquydp{right:-4px;}
+.r-kzbsb7{color:rgba(96,117,104,1.00);}
+.r-l2jz30{color:rgba(82,102,90,1.00);}
+.r-l71dzp{margin-top:14px;}
+.r-leqjx2{animation-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1);}
+.r-lltvgl{overflow-x:auto;}
+.r-lpb231{height:168px;}
+.r-lrsllp{width:24px;}
+.r-lrvibr{-moz-user-select:none;-webkit-user-select:none;user-select:none;}
+.r-majxgm{font-weight:500;}
+.r-makl99{color:rgba(47,111,76,1.00);}
+.r-mfh4gg{scroll-snap-type:x mandatory;}
+.r-mhe3cw{z-index:10;}
+.r-mipnz4{min-height:58px;}
+.r-mn671w{top:77px;}
+.r-mro3nb{background-color:rgba(21,23,24,1.00);}
+.r-n2oqdd{background-color:rgba(22,61,42,0.94);}
+.r-n6v787{font-size:13px;}
+.r-n9nrmx{color:rgba(220,232,223,1.00);}
+.r-ngr847{right:7px;}
+.r-nyc15k{font-size:44px;}
+.r-o4n3w5{width:23px;}
+.r-o52ifk{height:100px;}
+.r-ojf8lh{gap:6px;}
+.r-orgf3d{opacity:0;}
+.r-oszrgx{background-color:rgba(227,233,226,1.00);}
+.r-ovu0ai{font-weight:900;}
+.r-p7uv54{box-shadow:0px 7px 18px rgba(22,61,42,0.16);}
+.r-pdyna1{background-color:rgba(232,235,221,1.00);}
+.r-q4m81j{text-align:center;}
+.r-q5pkal{background-color:rgba(237,247,239,1.00);}
+.r-qfi6ny{top:30000px;}
+.r-qklmqi{border-bottom-width:1px;}
+.r-qn3fzs{padding-bottom:24px;}
+.r-qqjak8{font-size:9px;}
+.r-r6l3g7{width:46px;}
+.r-r8kn2t{background-color:rgba(232,241,233,1.00);}
+.r-rcnpu{color:rgba(96,113,102,1.00);}
+.r-rjixqe{line-height:20px;}
+.r-rpnbwx{margin-top:13px;}
+.r-rs94m5{background-image:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmVyc2lvbj0iMS4xIgogICB2aWV3Qm94PSIwIDAgMSAxIgogICBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWluWU1pbiBtZWV0Ij4KICA8cGF0aAogICAgIGQ9Ik0gMC4wNDAzODA1OSwwLjYyNjc3NjcgMC4xNDY0NDY2MSwwLjUyMDcxMDY4IDAuNDI5Mjg5MzIsMC44MDM1NTMzOSAwLjMyMzIyMzMsMC45MDk2MTk0MSB6IE0gMC4yMTcxNTcyOSwwLjgwMzU1MzM5IDAuODUzNTUzMzksMC4xNjcxNTcyOSAwLjk1OTYxOTQxLDAuMjczMjIzMyAwLjMyMzIyMzMsMC45MDk2MTk0MSB6IgogICAgIGlkPSJyZWN0Mzc4MCIKICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lIiAvPgo8L3N2Zz4K");}
+.r-rwqe4o{width:48px;}
+.r-s4dbld{color:rgba(169,126,24,1.00);}
+.r-s62m2j{animation-timing-function:cubic-bezier(0.47, 0, 0.745, 0.715);}
+.r-s67bdx{font-size:48px;}
+.r-sfbmgh{z-index:9999;}
+.r-sga3zk{height:64px;}
+.r-skwduh{color:rgba(60,135,247,1.00);}
+.r-so7y2g{line-height:64px;}
+.r-spi8cx{color:rgba(158,196,130,1.00);}
+.r-t9n6vb{background-color:rgba(216,233,191,1.00);}
+.r-tca1b4{color:rgba(23,61,43,1.00);}
+.r-tceitz{left:16px;}
+.r-todpsx{opacity:0.3;}
+.r-tsynxw{text-transform:uppercase;}
+.r-ttjikm{background-color:rgba(255,244,206,1.00);}
+.r-tyl6gl{background-color:rgba(0,0,0,0.53);}
+.r-u3en7u{color:rgba(208,226,194,1.00);}
+.r-u6sd8q{background-repeat:no-repeat;}
+.r-u8s1d{position:absolute;}
+.r-u92y06{background-color:rgba(255,165,0,1.00);}
+.r-uaa2di{gap:10px;}
+.r-ubezar{font-size:16px;}
+.r-uho16t{font-size:34px;}
+.r-uoibet{transform:rotate(180deg);}
+.r-ur6pnr{height:42px;}
+.r-usgzl9{width:44px;}
+.r-uwref7{background-color:rgba(18,56,36,0.95);}
+.r-vacyoi{padding-bottom:64px;}
+.r-van48c{caret-color:transparent;}
+.r-vboj7i{top:-7px;}
+.r-vc14ju{color:rgba(155,41,41,1.00);}
+.r-vnk513{min-height:116px;}
+.r-vvn4in{background-position:center;}
+.r-vw2c0b{font-weight:bold;}
+.r-w0j7pd{max-width:570px;}
+.r-wfqgy4{transition-duration:100ms;}
+.r-wgrm2z{color:rgba(82,112,94,1.00);}
+.r-wovxmb{background-color:rgba(236,239,228,1.00);}
+.r-wr9vkk{margin-bottom:3px;}
+.r-ws9h79{left:4px;}
+.r-wy61xf{height:72px;}
+.r-wznu0v{color:rgba(220,234,223,1.00);}
+.r-x11e5r{font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+.r-x3cy2q{background-size:100% 100%;}
+.r-xx3c9p{animation-name:r-imtty0;}
+.r-y4prou{background-color:rgba(220,233,223,1.00);}
+.r-y7v2we{background-color:rgba(32,36,37,1.00);}
+.r-yhgjq1{color:rgba(228,240,218,1.00);}
+.r-ynl6vs{max-height:94%;}
+.r-yy2aun{font-size:26px;}
+.r-z6hqnn{background-color:rgba(255,255,255,0.95);}
+.r-z80fyv{height:20px;}
+.r-zchlnj{right:0px;}
+.r-zz5t5d{font-size:28px;}
+@-webkit-keyframes r-11cv4x{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+@-webkit-keyframes r-1iq689l{0%{transform:translateY(0%);}100%{transform:translateY(100%);}}
+@-webkit-keyframes r-1pzkwqh{0%{transform:translateY(100%);}100%{transform:translateY(0%);}}
+@-webkit-keyframes r-imtty0{0%{opacity:0;}100%{opacity:1;}}
+@-webkit-keyframes r-q67da2{0%{transform:translateX(-100%);}100%{transform:translateX(400%);}}
+@-webkit-keyframes r-t2lo5v{0%{opacity:1;}100%{opacity:0;}}
+@keyframes r-11cv4x{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+@keyframes r-1iq689l{0%{transform:translateY(0%);}100%{transform:translateY(100%);}}
+@keyframes r-1pzkwqh{0%{transform:translateY(100%);}100%{transform:translateY(0%);}}
+@keyframes r-imtty0{0%{opacity:0;}100%{opacity:1;}}
+@keyframes r-q67da2{0%{transform:translateX(-100%);}100%{transform:translateX(400%);}}
+@keyframes r-t2lo5v{0%{opacity:1;}100%{opacity:0;}}</style><link rel="icon" href="/favicon.ico?v=zede-20261020"/><script type="module">globalThis.__EXPO_ROUTER_HYDRATE__=true;</script><link rel="preload" href="/_expo/static/css/leaflet-df687fead8c4838a4e6b8bcb2f176a0e.css" as="style">
+<link rel="stylesheet" href="/_expo/static/css/leaflet-df687fead8c4838a4e6b8bcb2f176a0e.css"><link rel="preload" href="/_expo/static/css/global-87fd0564cfa78f37afcb8d7603e15d75.css" as="style">
+<link rel="stylesheet" href="/_expo/static/css/global-87fd0564cfa78f37afcb8d7603e15d75.css"></head><body><div id="root"><div class="css-g5y9jx r-13awgt0"><!--$--><div style="position:absolute;left:0;right:0;top:0;bottom:0;pointer-events:none;visibility:hidden"></div><div class="css-g5y9jx r-13awgt0"><div class="css-g5y9jx r-13awgt0 r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="background-color:rgba(242,242,242,1.00);display:flex"><div class="css-g5y9jx r-13awgt0"><div class="css-g5y9jx r-13awgt0"><!--$--><div class="css-g5y9jx r-1awozwy r-9un0md r-13awgt0 r-16pcm1t r-1777fci r-1sbahrg" style="padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px"><div class="css-g5y9jx r-1q9bdsx r-1udh08x" style="width:220px;max-width:100%;aspect-ratio:2.6666666666666665;background-color:rgba(22,61,42,1.00)"><div aria-label="ZEDE, espacios para celebrar" class="css-g5y9jx r-1mlwlqe r-1udh08x r-417010 r-1pi2tsx r-13qz1uu"><div class="css-g5y9jx r-1niwhzg r-vvn4in r-u6sd8q r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw r-ehq7j7"></div></div></div><div role="progressbar" aria-valuemax="1" aria-valuemin="0" class="css-g5y9jx r-1awozwy r-1777fci"><div class="css-g5y9jx r-z80fyv r-19wmn03 r-17bb2tj r-1muvv40 r-1yef0xd r-1ldzwu0"><svg height="100%" viewBox="0 0 32 32" width="100%"><circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="stroke:#163D2A;opacity:0.2"></circle><circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="stroke:#163D2A;stroke-dasharray:80;stroke-dashoffset:60"></circle></svg></div></div></div><!--/$--></div></div></div></div><!--/$--></div></div><script src="/_expo/static/js/web/entry-e3915f11d7fa8e3c559198a199c7f363.js" defer></script>
+</body></html>
